@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 /**
 *  TiredMan 0.5
-* Copyright (C) 2011 Duendek86 <mendezpoli86@gmail.com>, Fran
+* Copyright (C) 2011 Duendek86 <mendezpoli86@gmail.com>, Fran <franrv@gmail.com>
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ import java.util.Scanner;
 * si tiene suficiente energia o si comienza a ahogarse.
 *
 * @author Duendek86 <mendezpoli86@gmail.com>
-* @author Fran
+* @author Fran <franrv@gmail.com>
 */
 public class Config{
 
