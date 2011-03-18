@@ -1,0 +1,5 @@
+name: tiredman
+
+main: com.bukkit.Duendek86.tiredman.TiredMan
+
+version: 0.5
