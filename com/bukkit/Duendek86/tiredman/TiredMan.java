@@ -69,8 +69,8 @@ public class TiredMan extends JavaPlugin{
              getServer().getPluginManager().registerEvent(Event.Type.PLAYER_JOIN, playerListener, Priority.Normal, this);
              getServer().getPluginManager().registerEvent(Event.Type.PLAYER_COMMAND_PREPROCESS, playerListener, Priority.Normal, this);
              getServer().getPluginManager().registerEvent(Event.Type.PLAYER_MOVE, playerListener, Priority.Normal, this);
-             getServer().getPluginManager().registerEvent(Event.Type.BLOCK_PLACED , blockListener, Priority.Normal, this);
-             getServer().getPluginManager().registerEvent(Event.Type.BLOCK_DAMAGED, blockListener, Priority.Normal, this);
+             getServer().getPluginManager().registerEvent(Event.Type.BLOCK_PLACE , blockListener, Priority.Normal, this);
+             getServer().getPluginManager().registerEvent(Event.Type.BLOCK_DAMAGE, blockListener, Priority.Normal, this);
              getServer().getPluginManager().registerEvent(Event.Type.PLAYER_CHAT , playerListener, Priority.Normal, this);
         }
 

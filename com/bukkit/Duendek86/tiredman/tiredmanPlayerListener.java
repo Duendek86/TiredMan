@@ -6,7 +6,9 @@ import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerChatEvent;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerListener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
@@ -51,9 +53,8 @@ public class tiredmanPlayerListener extends PlayerListener {
 
 
     @Override
-    public void onPlayerCommandPreprocess(PlayerChatEvent event) {
+    public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event) {
         super.onPlayerCommandPreprocess(event);
-    
 
     	String permisoinfo = "tiredman.info";
     	String permisoadmin = "tiredman.admin";
@@ -178,8 +179,10 @@ public class tiredmanPlayerListener extends PlayerListener {
     }
     
     //    Cuando un jugador se une lo intruduzco en las bases de datos.
+
     @Override
-    public void onPlayerJoin(PlayerEvent event) {
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        super.onPlayerJoin(event);
     	Player player = event.getPlayer();
     	Integer energiamaxima = Integer.parseInt((String) Config.getConfiguracion().get("ewater"));
     	if (Config.basedatos.get(player.getName()) == null){
