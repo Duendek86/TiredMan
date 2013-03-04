@@ -1,5 +1,5 @@
 /**
- * TiredMan 0.8 Copyright (c) 2013 Duendek86 <mendezpoli86@gmail.com>
+ * TiredMan 0.8.1 Copyright (c) 2013 Duendek86 <mendezpoli86@gmail.com>
  * TiredMan 0.7 Copyright (c) 2011 mabako <mabako@gmail.com>
  * TiredMan 0.5 Copyright (C) 2011 Duendek86 <mendezpoli86@gmail.com>, Fran
  * <franrv@gmail.com>
@@ -126,7 +126,7 @@ public class TiredManPlayerListener implements Listener
 			bloque2 = mundo.getBlockAt((int)from.getX(), (int)(from.getY() - 1), (int)from.getZ());
 			bloque3 = mundo.getBlockAt((int)from.getX(), (int)(from.getY() + 1), (int)from.getZ());
 			bloque4 = mundo.getBlockAt((int)from.getX(), (int)(from.getY() - 2), (int)from.getZ());
-			if ((bloque.getTypeId() == 9) && ((bloque2.getTypeId() == 9) || (bloque3.getTypeId() == 9))){
+			if (!player.isInsideVehicle() && ((bloque.getTypeId() == 9) && ((bloque2.getTypeId() == 9) || (bloque3.getTypeId() == 9)))){
 				status.jugadorenagua( njugador, energia, energiamaxima, from, to, bloque2.getTypeId(), bloque4.getTypeId(), cansancio);
 			}else{
 				if (energia<energiamaxima){

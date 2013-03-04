@@ -1,5 +1,28 @@
 name: tiredman
-
-main: com.bukkit.Duendek86.tiredman.TiredMan
-
-version: 0.5
+main: com.mespduendedreams.duendek86.TiredMan.TiredMan
+version: 0.8.1
+commands:
+    tiredman:
+        description: TiredMan command
+        usage: /tiredman
+        aliases: tm
+permissions:
+    tiredman.*:
+        description: Gives access to all doorman commands
+        children:
+            tiredman.info: true
+            tiredman.admin: true
+            tiredman.land: true
+            tiredman.water: true
+    tiredman.info:
+        description: Check your energy levels.
+        default: op
+    tiredman.admin:
+        description: Check the config.
+        default: op
+    tiredman.land: 
+        description: Make the player be affected by fatigue in land.
+        default: not op
+    tiredman.water:
+        description: Make the player be affected by fatigue in water.
+        default: not op

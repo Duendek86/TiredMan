@@ -1,5 +1,5 @@
 /**
- * TiredMan 0.8 Copyright (c) 2013 Duendek86 <mendezpoli86@gmail.com>
+ * TiredMan 0.8.1 Copyright (c) 2013 Duendek86 <mendezpoli86@gmail.com>
  * TiredMan 0.7 Copyright (c) 2011 mabako <mabako@gmail.com>
  * TiredMan 0.5 Copyright (C) 2011 Duendek86 <mendezpoli86@gmail.com>, Fran
  * <franrv@gmail.com>
